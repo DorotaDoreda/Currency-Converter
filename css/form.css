@@ -1,0 +1,65 @@
+.form__fieldset {
+    background-image: url(https://bogatyzwyboru.pl/wp-content/uploads/2020/06/Dlaczego-nie-masz-pieni%C4%99dzy.jpg);
+    border: 2px solid green;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.form__legend {
+    background-color: rgb(8, 48, 8);
+    color: white;
+    border-radius: 5px;
+    padding: 20px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.form__labelText {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 2;
+}
+
+.form__fieldText {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 20px;
+}
+
+.form__field {
+    max-width: 150px;
+    width: 100%;
+    border: 4px solid green;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 20px;
+}
+
+.form__button {
+    background-color: rgb(8, 48, 8);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 20px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.form__score{
+    font-size: 20px;
+    font-weight: bold;
+    border: 3px solid rgb(8, 48, 8);
+    border-radius: 5px;
+    background-color: white; 
+    padding:20px;
+}
+.form__button--reset{
+    background-color: rgb(8, 48, 8);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 20px;
+    font-weight: 700;
+    font-size: 20px;
+}

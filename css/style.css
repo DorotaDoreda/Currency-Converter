@@ -1,0 +1,29 @@
+html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+.body {
+    font-family:'Open Sans', sans-serif;
+    background-color: rgb(126, 221, 126);
+   
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;  
+}
+.container__header {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 30px;
+    margin-left: 0%;
+    background-color: white;
+    border: 3px solid rgb(8, 48, 8);
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto;
+}
