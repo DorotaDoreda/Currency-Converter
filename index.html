@@ -8,7 +8,7 @@
     <title>Currency Converter</title>
     <link rel="icon" href="images/icon.png">
     <meta property="og:image" content="images/share.png">
-    
+
 
     <link href="css/style.css" rel="stylesheet">
     <link href="css/form.css" rel="stylesheet">
@@ -25,9 +25,9 @@
 </head>
 
 <body class="body">
-    <div class="container js-form">
-        <header class="container__header"> Przelicznik walut na PLN</header>
-        <form class="form">
+    <div class="container">
+        <header class="container__header"> Przelicznik walut</header>
+        <form class="form js-form">
             <fieldset class="form__fieldset">
                 <legend class="form__legend">
                     Wybierz walutę:
@@ -36,28 +36,29 @@
                 <ul>
                     <li>
                         <label>
-                            <span class="form__labelText">Euro</span>
-                            <input type="radio" value="currencyEuro" class="js-euro" name="value" checked>
+                            <span class="form__labelText">EUR</span>
+                            <input type="radio" class="js-currency" name="value" value="EUR" checked>
                         </label>
                     </li>
                     <li>
                         <label>
                             <span class="form__labelText">USD</span>
-                            <input type="radio" value="currencyUsd" class="js-usd" name="value">
+                            <input type="radio" class="js-currency" name="value" value="USD">
                         </label>
                     </li>
                     <li>
                         <label>
                             <span class="form__labelText">GBP</span>
-                            <input type="radio" value="currencyGbp" class="js-gbp" name="value">
+                            <input type="radio" class="js-currency" name="value" value="GBP">
                         </label>
                     </li>
 
                 </ul>
                 <p>
                     <label>
-                        <span class="form__fieldText">Kwota:</span>
-                        <input class="form__field js-value" name="amount" placeholder="Wpisz kwote" type="number" min="1" step="any" required >
+                        <span class="form__fieldText">Kwota w PLN:</span>
+                        <input class="form__field js-amount" name="amount" placeholder="Wpisz kwote" type="number"
+                            min="1" step="any" required>
                     </label>
                 </p>
 
@@ -65,12 +66,12 @@
             </fieldset>
             <button class="form__button">Przelicz</button>
             <p class="form__score">
-                Kwota w PLN: <strong class="js-pln" >_____</strong>
+                Wynik: <strong class="js-result">_____</strong>
             </p>
-            <button type="reset" class="form__button--reset">Wyczyść</button>
+
 
         </form>
-        
+
 
 
     </div>
