@@ -1,28 +1,38 @@
 console.log("Cześć!");
 
-let euroElement = document.querySelector(".js-euro");
-let usdElement = document.querySelector(".js-usd");
-let gbpElement = document.querySelector(".js-gbp");
+let amountElement = document.querySelector(".js-amount");
+let currencyElement = document.querySelector(".js-currency");
+let resultElement = document.querySelector(".js-result");
 let formElement = document.querySelector(".js-form");
-let plnValue = document.querySelector(".js-pln");
-let amount = document.querySelector(".js-value");
-let buttonReset = document.querySelector(".form__button--reset")
 
 formElement.addEventListener("submit", (event) => {
   event.preventDefault();
 
-  switch (true) {
-    case euroElement.checked:
-      pln = amount.value * 4.55;
-      plnValue.innerText = `${pln.toFixed(2)} zł`;
+  let rateEUR = 4.554;
+  let rateUSD = 3.763;
+  let rateGBP = 5.232;
+
+  let amount = +amountElement.value;
+  let currency = currencyElement.value;
+  let result;
+
+  switch (currency) {
+    case "EUR":
+      result = amount / rateEUR;
       break;
-    case usdElement.checked:
-      pln = amount.value * 3.76;
-      plnValue.innerText = `${pln.toFixed(2)} zł`;
+
+    case "USD":
+      result = amount / rateUSD;
       break;
-    case gbpElement.checked:
-      pln = amount.value * 5.23;
-      plnValue.innerText = `${pln.toFixed(2)} zł`;
+
+    case "GBP":
+      result = amount / rateGBP;
       break;
+
   }
+  resultElement.innerText = `${amount} PLN = ${result.toFixed(2)} ${currency}`;
+
+ 
+
+
 });
